@@ -1,0 +1,141 @@
+#root {
+  /* max-width: 1280px; */
+  margin: 0;
+  /* padding: 2rem; */
+  /* text-align: center; */
+
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  padding-top: 10px;
+  border-top: 2px solid #525252;
+}
+
+.content>* {
+  flex: 1;
+}
+
+.content .central {
+  flex: 3;
+}
+
+/* tirar dps */
+* {
+  background-color: #191818;
+}
+
+/*  */
+
+.Divisor {
+  display: flex;
+  height: 100vh;
+  margin: 0px;
+}
+
+.Direito {
+  margin-left: 10px;
+  background-color: white;
+  display: flex;
+}
+
+.login-inputs {
+  margin: 30px 0px;
+  display: flex;
+}
+
+.login-inputs input[type=email],
+.login-inputs input[type=password] {
+  display: flex;
+  margin-right: 30px;
+  padding: 10px;
+  padding-right: 30px;
+  border-radius: 8px;
+}
+
+.login-inputs button {
+  background-color: blue;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+}
+
+.login-inputs button:hover {
+  cursor: pointer;
+  background-color: rgb(1, 179, 202);
+}
+
+.Esquerdo {
+  background-color: rgb(1, 179, 202);
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: left;
+}
+
+.organizar {
+  align-items: center;
+}
+
+.first-p {
+  color: blue;
+}
+
+.second-p {
+  color: black;
+}
+
+.Cadastro {
+  width: 100px;
+  padding: 10px;
+  background-color: blue;
+  border-radius: 8px;
+}
+
+.inscreva-se {
+  color: white;
+
+}
+
+.formCadastro {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 1280px;
+  height: 100vh;
+}
+
+.cadastro-inputs {
+  display: contents;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

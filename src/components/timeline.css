@@ -1,0 +1,29 @@
+.central {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 30px;
+    background-color: #191818;
+    color: white;
+}
+
+textarea {
+    width: 500px;
+    height: 80px;
+    color: white;
+}
+
+button {
+    color: white;
+    cursor: pointer;
+}
+
+.btnTw {
+    display: flex;
+    justify-content: right;
+}
+
+.btnTw :hover {
+    background-color: rgb(176, 176, 246);
+
+}
