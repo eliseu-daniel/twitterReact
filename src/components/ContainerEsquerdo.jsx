@@ -4,7 +4,7 @@ import './ContainerEsquerdo.css';
 export function ContainerEsquerdo({ tweets }) {
 
     function somaTweet() {
-        return 3
+        return tweets ? tweets.length : 0
     }
 
     return (

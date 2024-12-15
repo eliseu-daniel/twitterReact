@@ -35,7 +35,6 @@ function App() {
       nome: "Teste 2",
       publi: "Testando 4"
     }
-
   ]
 
   return (
