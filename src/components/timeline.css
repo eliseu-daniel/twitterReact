@@ -1,18 +1,56 @@
-.Feed {
+.central {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5 30px;
+    width: 100%;
+    height: 100%;
+    background-color: #191818;
     color: white;
 }
 
-button {
+textarea {
+    width: 510px;
+    max-width: 1200px;
+    height: 100px;
     color: white;
-    cursor: pointer;
+    border-radius: 5px;
+}
+
+.txtArea {
+    padding-bottom: 5px;
 }
 
 .btnTw {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
+    color: white;
+    border-radius: 5px;
 }
 
 .btnTw :hover {
     background-color: rgb(176, 176, 246);
 
+}
+
+.Feed {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    width: 100%;
+    max-width: 500px;
+    height: fit-content;
+    margin: 0 auto;
+    color: white;
+    border: solid 1px rgba(114, 129, 143, 0.203);
+    border-radius: 5px;
+}
+
+.btnDeleteTw {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
 }

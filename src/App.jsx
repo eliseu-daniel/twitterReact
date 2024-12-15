@@ -6,7 +6,6 @@ import './App.css'
 import { ContainerDireito } from './components/ContainerDireito.jsx'
 import { ContainerEsquerdo } from './components/ContainerEsquerdo.jsx'
 import { NavTw } from './components/Navbar.jsx'
-import { InsertTweet } from './components/insertTweet.jsx'
 
 function App() {
 
@@ -29,6 +28,13 @@ function App() {
       nome: "Teste",
       publi: "Testando 3"
     }
+    ,
+    {
+
+      id: 4,
+      nome: "Teste 2",
+      publi: "Testando 4"
+    }
 
   ]
 
@@ -39,16 +45,10 @@ function App() {
       <div className="timeline">
         <NavTw />
         <div className="content">
-          <ContainerEsquerdo />
-          <InsertTweet />
-          {
-            tweets.map(tweet =>
-              <TimeLine
-                tweet={tweet}
-                key={tweet.id}
-              />
-            )
-          }
+          <ContainerEsquerdo tweets={tweets} />
+          <TimeLine
+            tweets={tweets}
+          />
           <ContainerDireito />
         </div>
       </div>

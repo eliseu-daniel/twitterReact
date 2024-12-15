@@ -1,17 +1,29 @@
 import React from "react";
 import './timeline.css'
 
-export function TimeLine({ tweet }) {
+export function TimeLine({ tweets }) {
     return (
         <>
-            <section className="Feed">
-                <div >
-                    <p>{tweet.publi}</p>
+            <main className="central">
+                <div className="txtArea">
+                    <textarea></textarea>
+                    <div className="btnTw">
+                        <button className="btnTw" type="submit">Tweet</button>
+                    </div>
                 </div>
-                <div>
-                    <button>Remover</button>
-                </div>
-            </section>
+                {
+                    tweets.map((tweet) => (
+                        < section key={tweet.id} className="Feed" >
+                            <div>
+                                <p>{tweet.nome}</p>
+                            </div>
+                            <div >
+                                <p>{tweet.publi}</p>
+                            </div>
+                        </section>)
+                    )
+                }
+            </main >
         </>
     )
 }
