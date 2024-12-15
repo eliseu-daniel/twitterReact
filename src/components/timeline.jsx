@@ -1,23 +1,17 @@
 import React from "react";
 import './timeline.css'
 
-export function TimeLine() {
+export function TimeLine({ tweet }) {
     return (
         <>
-            <main className="central">
-                <div>
-                    <textarea name="writetw" id="writetw"></textarea>
-                    <div className="btnTw">
-                        <button type="submit">Tweet</button>
-                    </div>
-                </div>
-                <div className="Feed">
-                    <p>Aqui está seus novos tweets</p>
+            <section className="Feed">
+                <div >
+                    <p>{tweet.publi}</p>
                 </div>
                 <div>
                     <button>Remover</button>
                 </div>
-            </main>
+            </section>
         </>
     )
 }
