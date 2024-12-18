@@ -1,14 +1,14 @@
 import React from "react";
 import './timeline.css'
 
-export function TimeLine({ tweets }) {
+export function TimeLine({ tweets, tw }) {
     return (
         <>
             <main className="central">
                 <div className="txtArea">
                     <textarea></textarea>
                     <div className="btnTw">
-                        <button className="btnTw" type="submit">Tweet</button>
+                        <button className="btnTw" onClick={e.tw} type="submit">Tweet</button>
                     </div>
                 </div>
                 {

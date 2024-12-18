@@ -6,8 +6,12 @@ import './App.css'
 import { ContainerDireito } from './components/ContainerDireito.jsx'
 import { ContainerEsquerdo } from './components/ContainerEsquerdo.jsx'
 import { NavTw } from './components/Navbar.jsx'
+import { useState } from 'react'
 
 function App() {
+
+
+  const [tw, setTw] = useState(0)
 
   const tweets = [
     {
