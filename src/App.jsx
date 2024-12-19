@@ -11,7 +11,17 @@ import { useState } from 'react'
 function App() {
 
 
-  const [tw, setTw] = useState(0)
+  function Publicacao() {
+
+    const [Tw, setTw] = useState([
+      {
+        id: 5,
+        nome: "NovaTeste",
+        publi: ""
+      }
+    ])
+  }
+
 
   const tweets = [
     {
