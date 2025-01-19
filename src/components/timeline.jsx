@@ -12,6 +12,8 @@ export function TimeLine({ tweets, tw }) {
                     </div>
                 </div>
                 {
+
+
                     tweets.map((tweet) => (
                         < section key={tweet.id} className="Feed" >
                             <div>
@@ -23,6 +25,7 @@ export function TimeLine({ tweets, tw }) {
                         </section>)
                     )
                 }
+                id.Math(...id)
             </main >
         </>
     )
